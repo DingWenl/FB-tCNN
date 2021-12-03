@@ -1,0 +1,3 @@
+# FB-tCNN
+FB-tCNN For SSVEP
+111111
