@@ -4,7 +4,7 @@ import numpy as np
 import keras
 
 # get the training sampels
-def train_datagenerator(batchsize,train_data,win_train,y_lable, start_time, down_sample,train_list, channel):
+def train_datagenerator(batchsize,train_data,win_train,y_label, start_time, down_sample,train_list, channel):
     while True:
         x_train, y_train = list(range(batchsize)), list(range(batchsize))
         # get training samples of batchsize trials
@@ -12,7 +12,7 @@ def train_datagenerator(batchsize,train_data,win_train,y_lable, start_time, down
             # randomly selecting the single-trial
             k = sample(train_list, 1)[0]
             # get the label of the single-trial
-            y_data = y_lable[k]-1
+            y_data = y_label[k]-1
             # randomly selecting a single-sample in the single-trial, 35 is the frames of the delay-time
             time_start = random.randint(35,int(1000+35-win_train))
             x1 = int(start_time[k]/down_sample)+time_start
@@ -27,12 +27,12 @@ def train_datagenerator(batchsize,train_data,win_train,y_lable, start_time, down
         yield x_train, y_train
 
 # get the validation samples
-def val_datagenerator(batchsize,train_data,win_train,y_lable, start_time, down_sample,val_list, channel):
+def val_datagenerator(batchsize,train_data,win_train,y_label, start_time, down_sample,val_list, channel):
     while True:
         x_train, y_train = list(range(batchsize)), list(range(batchsize))
         for i in range(batchsize):
             k = sample(val_list, 1)[0]
-            y_data = y_lable[k]-1
+            y_data = y_label[k]-1
             time_start = random.randint(35,int(1000-win_train))
             x1 = int(start_time[k]/down_sample)+time_start
             x2 = int(start_time[k]/down_sample)+time_start+win_train
