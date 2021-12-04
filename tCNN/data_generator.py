@@ -13,7 +13,7 @@ def train_datagenerator(batchsize,train_data,win_train,y_label, start_time, down
             k = sample(train_list, 1)[0]
             # get the label of the single-trial
             y_data = y_label[k]-1
-            # randomly selecting a single-sample in the single-trial, 35 is the frames of the delay-time
+            # randomly selecting a single-sample in the single-trial, 35 is the frames of the delay-time, 1000 frames is the data range we used
             time_start = random.randint(35,int(1000+35-win_train))
             x1 = int(start_time[k]/down_sample)+time_start
             x2 = int(start_time[k]/down_sample)+time_start+win_train
