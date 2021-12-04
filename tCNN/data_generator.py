@@ -33,7 +33,7 @@ def val_datagenerator(batchsize,train_data,win_train,y_label, start_time, down_s
         for i in range(batchsize):
             k = sample(val_list, 1)[0]
             y_data = y_label[k]-1
-            time_start = random.randint(35,int(1000-win_train))
+            time_start = random.randint(35,int(1000+35-win_train))
             x1 = int(start_time[k]/down_sample)+time_start
             x2 = int(start_time[k]/down_sample)+time_start+win_train
             x_1 = train_data[:,x1:x2]
