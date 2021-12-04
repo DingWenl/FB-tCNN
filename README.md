@@ -6,7 +6,7 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 3. tensorflow-gpu == 2.1.0
 4. scipy == 1.5.2
 5. numpy == 1.19.2
-## Fraining FB-tCNN for the public dataset
+## Training FB-tCNN for the public dataset
 1. Download the code.
 2. Download the public dataset ：https://academic.oup.com/gigascience/article/8/5/giz002/5304369 .
 3. Create a model folder to save the model.
