@@ -5,5 +5,8 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 2. Download the public dataset ：https://academic.oup.com/gigascience/article/8/5/giz002/5304369 .
 3. Create a model folder to save the model.
 4. Change the data and model folder paths in train and test files to your data and model folder paths.
-## The information of the Evironm
+## The related version information
+1. Python == 3.7.0
+2. Keras-gpu == 2.3.1
+3. tensorflow-gpu == 2.1.0
 
