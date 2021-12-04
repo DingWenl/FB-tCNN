@@ -52,7 +52,7 @@ if __name__ == '__main__':
     t_train_list = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
     # selecting the training subject
     for sub_selelct in range(1, 10):
-        # the path of the dataset and you need change it for your training
+        # the path of the dataset and you need to change it for your training
         path='D:/dwl/data/SSVEP_5.6/sess01/sess01_subj0%d_EEG_SSVEP.mat'%sub_selelct
         # get the filtered EEG-data, label and the start time of all trials of the training data
         data, label, start_time = get_train_data(wn1,wn2,path,down_simple)
@@ -72,7 +72,7 @@ if __name__ == '__main__':
             input_tensor = Input(shape=input_shape)
             preds = tcnn_net(input_tensor)
             model = Model(input_tensor, preds)
-            # the path of the saved model and you need change it
+            # the path of the saved model and you need to change it
             model_path = 'D:/dwl/github_code/FB-tCNN_and_tCNN_code/tCNN/model/model_0.1_%3.1fs_0%d.h5'%(t_train, sub_selelct)
             # some hyper-parameters in the training process
             model_checkpoint = ModelCheckpoint(model_path, monitor='val_loss',verbose=1, save_best_only=True,mode='auto')
