@@ -64,7 +64,7 @@ if __name__ == '__main__':
             train_list = list(range(100))
             val_list = sample(train_list, 10)
             train_list = [train_list[i] for i in range(len(train_list)) if (i not in val_list)]
-            # data generator (generate the samples of batchsize trials)
+            # data generator (generate the training and validation samples of batchsize trials)
             train_gen = data_generator.train_datagenerator(batchsize,data,win_train,label, start_time, down_simple,train_list, channel)
             val_gen = data_generator.val_datagenerator(batchsize,data,win_train,label, start_time, down_simple,val_list, channel)
             #%% setting the input of the network
