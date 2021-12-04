@@ -39,7 +39,7 @@ def train_datagenerator(batchsize,train_data1,train_data2,train_data3,train_data
         x_train2 = np.reshape(x_train2,(batchsize,channel, win_train, 1))
         x_train3 = np.reshape(x_train3,(batchsize,channel, win_train, 1))
         x_train4 = np.reshape(x_train4,(batchsize,channel, win_train, 1))
-        # concatenate the four sub-input into one input to make it can be as the input of the FB-tCNN's network
+        # concatenate the four sub-inputs into one input to make it can be as the input of the FB-tCNN's network
         x_train = np.concatenate((x_train1, x_train2, x_train3, x_train4), axis=-1)
         y_train = np.reshape(y_train,(batchsize,4))
         
