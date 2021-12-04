@@ -6,7 +6,7 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 3. tensorflow-gpu == 2.1.0
 4. scipy == 1.5.2
 5. numpy == 1.19.2
-## What you need to do to training FB-tCNN for the public dataset
+## Fraining FB-tCNN for the public dataset
 1. Download the code.
 2. Download the public dataset ：https://academic.oup.com/gigascience/article/8/5/giz002/5304369 .
 3. Create a model folder to save the model.
@@ -15,3 +15,4 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 1. You need to design the new filter bank according to your dataset (Fundamental range of the SSVEP-EEG data). The filter bank details can refer to our paper. 
 2. The number of the sub-filters in the codes may be changed according to your own dataset. 
 3. The frequency of the target in the codes should be changed according to your own dataset.
+4. The program that reads the data needs to be modified according to your own dataset.
