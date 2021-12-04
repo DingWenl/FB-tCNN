@@ -12,7 +12,7 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 3. Create a model folder to save the model.
 4. Change the data and model folder paths in train and test files to your data and model folder paths.
 ## Training FB-tCNN for your own dataset
-1. You need to design the new filter bank according to your dataset (Fundamental range of the SSVEP-EEG data). The filter bank details can refer to our paper. 
+1. You need to design a new filter bank according to your dataset (Fundamental range of the SSVEP-EEG data). The filter bank details can refer to our paper. 
 2. The number of the sub-filters in the codes may be changed according to your own dataset. 
 3. The frequency of the target in the codes should be changed according to your own dataset.
 4. The program that reads the data needs to be modified according to your own dataset.
