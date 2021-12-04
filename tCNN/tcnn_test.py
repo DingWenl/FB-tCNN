@@ -23,7 +23,7 @@ def datagenerator(batchsize,train_data,win_train,y_lable, start_time,down_sample
     y_train = np.reshape(y_train,(batchsize,4))
     return x_train, y_train
 
-# get the filtered EEG-data, label and the start time of each trial of the dataset (test set), more details refer to the "get_test_data" in "tCNN_train"
+# get the filtered EEG-data, label and the start time of each trial of the dataset (test set), more details refer to the "get_train_data" in "tCNN_train"
 def get_test_data(wn1,wn2,path='D:/dwl/data/SSVEP_5.6/sess01_subj02_EEG_SSVEP.mat', down_sample=4):
     data = scio.loadmat(path)
     x_data = data['EEG_SSVEP_test']['x'][0][0][::down_sample,]
