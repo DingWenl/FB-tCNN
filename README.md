@@ -12,5 +12,6 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 4. scipy == 1.5.2
 5. numpy == 1.19.2
 ## Training FB-tCNN for your own dataset
-1. You need to design the new filter bank according to your dataset (Fundamental range of the SSVEP-EEG data). The filter bank details can refer to our paper. The number of the sub-filters in the codes may be changed according to your own dataset. 
-2. The frequency of the target should be changed according to your dataset.
+1. You need to design the new filter bank according to your dataset (Fundamental range of the SSVEP-EEG data). The filter bank details can refer to our paper. 
+2. The number of the sub-filters in the codes may be changed according to your own dataset. 
+3. The frequency of the target in the codes should be changed according to your dataset.
