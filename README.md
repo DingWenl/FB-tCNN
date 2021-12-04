@@ -9,4 +9,6 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 1. Python == 3.7.0
 2. Keras-gpu == 2.3.1
 3. tensorflow-gpu == 2.1.0
+4. scipy == 1.5.2
+5. numpy == 1.19.2
 
