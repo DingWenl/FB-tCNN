@@ -83,7 +83,7 @@ def get_test_data(wn11,wn21,wn12,wn22,wn13,wn23,wn14,wn24,path='D:/dwl/data/SSVE
 
 if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = "0,1"
-    # Setting hyper-parameters, more details refer to "tCNN_train"
+    # Setting hyper-parameters, more details refer to "FB-tCNN_train"
     down_sample = 4
     fs = 1000/down_sample
     channel = 9
