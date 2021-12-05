@@ -8,7 +8,7 @@ Here are the codes of the tCNN and FB-tCNN in the paper "Filter Bank Convolution
 5. numpy == 1.19.2
 ## Training FB-tCNN for the public dataset
 1. Download the code.
-2. Download the public dataset ：https://academic.oup.com/gigascience/article/8/5/giz002/5304369 .
+2. Download the [public dataset](https://academic.oup.com/gigascience/article/8/5/giz002/5304369).
 3. Create a model folder to save the model.
 4. Change the data and model folder paths in train and test files to your data and model folder paths.
 ## Training FB-tCNN for your own dataset
