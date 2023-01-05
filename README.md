@@ -1,4 +1,4 @@
-# FB-tCNN for SSVEP Recognition
+# FB-tCNN for SSVEP Classification
 Here are the codes of the tCNN and FB-tCNN in the paper "[Filter Bank Convolutional Neural Network for Short Time-Window Steady-State Visual Evoked Potential Classification](https://ieeexplore.ieee.org/document/9632600)"(DOI:10.1109/TNSRE.2021.3132162).
 ## The related version information
 1. Python == 3.7.0
